@@ -1,0 +1,159 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    
+}
+
+
+
+.main-page{
+    background-color: rgba(194, 254, 73, 0.267);
+    width: 100vw;  
+    height: 100vh;  
+    padding: 30px;
+}
+.main-page h1{
+    font-size: 50px;
+    text-align: center;
+    font-family: "Macondo", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+.game-container{
+    border: 2px solid black;
+    padding: 20px;
+}
+.round{
+    text-align: center;
+}
+.score{
+    text-align: center;
+}
+.human{
+    display: none;
+}
+.human.active{
+    display: block;
+}
+.human-options{
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    width: 100%
+}
+
+.options{
+    display: flex;
+    flex-direction: row;
+    height: 60%;
+    gap: 40px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.options img{
+    width: auto;
+    height: 100%;
+    object-fit: contain;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: transform 0.2s;
+    overflow: visible; 
+}
+@media (max-width: 600px) {
+    .options img {
+    max-width: 100px;   
+    width: 100%;       
+    height: auto;       
+    object-fit: contain;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+}
+
+.option:hover {
+    filter: drop-shadow(2px 0 rgba(165, 146, 146, 0.293))
+          drop-shadow(-2px 0 rgba(165, 146, 146, 0.293))
+          drop-shadow(0 2px rgba(165, 146, 146, 0.293))
+          drop-shadow(0 -2px rgba(165, 146, 146, 0.293));
+    transform: scale(1.10);
+}
+.option.active{
+     filter: drop-shadow(2px 0 black)
+          drop-shadow(-2px 0 black)
+          drop-shadow(0 2px black)
+          drop-shadow(0 -2px black);
+    transform: scale(1.10);
+}
+
+
+.submit-choice{
+    width: 50%;
+    height: 50px;
+    border-radius: 15px;
+}
+.submit-choice:hover{
+    background-color: #ffaeae;
+    transform: scale(1.01);
+}
+.human h3{
+    text-align: center;
+    font-size: 30px;
+}
+.computer h3{
+        text-align: center;
+
+    font-size: 30px;
+}
+.computer{
+    display: none;
+}
+.computer img{
+    height: 250px;
+    width: auto;
+}
+.computer.active{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
+.result{
+    display: none;
+}
+.result.active{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.player-hud.active{
+    display: block;
+}
+
+.player-hud{
+    display: none;
+}
+
+.player-hud.active{
+    display: block;
+}
+
+.final-result{
+    display: none;
+}
+.final-text{
+    text-align: center;
+}
+
+.final-result.active{
+    display: block;
+
+}
